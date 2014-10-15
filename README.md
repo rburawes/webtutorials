@@ -3,6 +3,10 @@ webtutorials
 
 Sample web applications tutorials.
 
+WebSample Project:
+
+Demonstration on how to use JSP's usebean and JSTL tag to display data from session.
+
 How to run:
 
 1. You can use any web application server e.g. tomcat.
