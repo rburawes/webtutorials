@@ -13,3 +13,12 @@ How to run:
 2. Put the project on your tomcat's webapps.
 3. Run tomcat.
 4. Access http://localhost:8083/WebSample/SampleServlet on your browser.
+
+EJB Sample Project:
+
+Sample EJB projec using Eclipse and Glassfish 4.
+
+1. Download JavaEE Kit from Oracle site. http://www.oracle.com/technetwork/java/javaee/downloads/index.html
+2. Have a copy of Eclipse, here I've used Kepler.
+3. Import the projects.
+4. Make sure you're using Glassfish as the container for the app.
