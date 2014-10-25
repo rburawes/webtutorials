@@ -3,8 +3,9 @@
 	<name>GreetingEAR</name>
 	<comment></comment>
 	<projects>
-		<project>GreetingEjb</project>
 		<project>GreetingWeb</project>
+		<project>GreetingEjb</project>
+		<project>GreetingEjbClient</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

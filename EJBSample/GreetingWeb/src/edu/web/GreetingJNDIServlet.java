@@ -3,7 +3,8 @@ package edu.web;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.ejb.EJB;
+import javax.naming.Context;
+import javax.naming.InitialContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,19 +14,30 @@ import javax.servlet.http.HttpServletResponse;
 import edu.review.GreetingLocal;
 
 /**
- * Servlet implementation class SalutationServlet
+ * Servlet implementation class GreetingJNDIServlet
  */
-@WebServlet( "/GreetingServlet" )
-public class GreetingServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+@WebServlet( "/GreetingJNDIServlet" )
+public class GreetingJNDIServlet extends HttpServlet {
 	
-	@EJB
-	private GreetingLocal greeting;
-			
+	private static final long serialVersionUID = 1L;
+	private GreetingLocal greetingLocal;
+	
+	public void init() throws ServletException {
+		
+		Context context = null;
+		try {
+			context = new InitialContext();
+			greetingLocal = ( GreetingLocal ) context.lookup( "java:global/GreetingEAR/GreetingEjb/Greeting!edu.review.GreetingLocal" );
+		} catch ( Exception e ) {
+			e.printStackTrace();
+		}
+		
+	}
+	
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public GreetingServlet() {
+	public GreetingJNDIServlet() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -58,7 +70,7 @@ public class GreetingServlet extends HttpServlet {
 			out.println( "<title>Servlet SalutationServlet</title>" );
 			out.println( "</head>" );
 			out.println( "<body>" );
-			out.println( "<h1>" + greeting.sayHello( "Rae Burawes" ) + "</h1>" );
+			out.println( "<h1>" + greetingLocal.sayHello( "Rae Burawes, this is using JNDI" ) + "</h1>" );
 			out.println( "</body>" );
 			out.println( "</html>" );
 		} finally {

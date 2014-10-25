@@ -6,19 +6,19 @@ import javax.ejb.Stateless;
 /**
  * Session Bean implementation class Salutation
  */
-@Stateless
+@Stateless(mappedName = "GreetingBean")
 @LocalBean
-public class Greeting {
-
+public class Greeting implements GreetingLocal{
+	
 	public Greeting() {
 	}
 	
 	public String sayHello( String name ) {
-		return String.format( "Hello %s!", name);
+		return String.format( "Hello %s!", name );
 	}
 	
 	public String sayHi( String name ) {
-		return String.format( "Hi %s!", name);
+		return String.format( "Hi %s!", name );
 	}
 	
 }

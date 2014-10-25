@@ -2,5 +2,7 @@
     <wb-module deploy-name="GreetingEjb">
         <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
         <property name="java-output-path" value="/GreetingEjb/build/classes"/>
+        <property name="ClientProject" value="GreetingEjbClient"/>
+        <property name="ClientJARURI" value="GreetingEjbClient.jar"/>
     </wb-module>
 </project-modules>
