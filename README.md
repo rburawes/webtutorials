@@ -22,3 +22,8 @@ Sample EJB projec using Eclipse and Glassfish 4.
 2. Have a copy of Eclipse, here I've used Kepler.
 3. Import the projects.
 4. Make sure you're using Glassfish as the container for the app.
+
+Note: Using Glassfish server admin add the following for Queue connection factory and and Queue destination.
+
+	a. jms/GreetingQueueFactory
+	b. jms/GreetingQueue
