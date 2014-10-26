@@ -55,7 +55,7 @@ public class GreetingServlet extends HttpServlet {
 		try {
 			out.println( "<html>" );
 			out.println( "<head>" );
-			out.println( "<title>Servlet SalutationServlet</title>" );
+			out.println( "<title>Servlet Greeting!</title>" );
 			out.println( "</head>" );
 			out.println( "<body>" );
 			out.println( "<h1>" + greeting.sayHello( "Rae Burawes" ) + "</h1>" );

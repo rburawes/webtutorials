@@ -67,7 +67,7 @@ public class GreetingJNDIServlet extends HttpServlet {
 		try {
 			out.println( "<html>" );
 			out.println( "<head>" );
-			out.println( "<title>Servlet SalutationServlet</title>" );
+			out.println( "<title>Servlet Greeting!</title>" );
 			out.println( "</head>" );
 			out.println( "<body>" );
 			out.println( "<h1>" + greetingLocal.sayHello( "Rae Burawes, this is using JNDI" ) + "</h1>" );
