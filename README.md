@@ -1,7 +1,12 @@
 webtutorials
 ============
 
-Sample web applications tutorials.
+This is a collections of codes that I've used during my self-study and review on Java EE technologies.
+
+1. Servlets, JSP and JSTL
+2. EJB's session beans and MDB
+3. JPA
+
 
 WebSample Project:
 
