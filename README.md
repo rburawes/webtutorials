@@ -32,3 +32,5 @@ Note: Using Glassfish server admin add the following for Queue connection factor
 
 	a. jms/GreetingQueueFactory
 	b. jms/GreetingQueue
+	c. Web service sample url: http://localhost:8080/SampleService/HelloService?Tester
+
