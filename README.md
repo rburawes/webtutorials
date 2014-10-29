@@ -40,7 +40,7 @@ Spring Sample Project:
 Sample codes using Spring Framework.
 
 1. spring-property-file-sample - A demonstration on how to configure and use multiple property files in Spring and display the values in JSP using Spring Tag or JSTL.
-	
-	a. Look at root-context.xml for property file configuration.
-	b. To display the values in JSP using JSTL via EL, set 'exposeContextBeansAsAttributes' of InternalResourceViewResolver.
-	c. See servlet-context.xml for InternalResourceViewResolver configuration.
+
+		a.Look at root-context.xml for property file configuration.
+		b. To display the values in JSP using JSTL via EL, set 'exposeContextBeansAsAttributes' of InternalResourceViewResolver.
+		c. See servlet-context.xml for InternalResourceViewResolver configuration.
