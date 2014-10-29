@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+	
+	<beans:bean id="samplePropertyConfigurer" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<beans:property name="locations">
+			<list>
+				<value>classpath:sample.properties</value>
+				<value>classpath:sample-jstl.properties</value>
+			</list>
+		</beans:property>
+	</beans:bean>
+	
+	<context:property-placeholder properties-ref="samplePropertyConfigurer" />
+		
+</beans>

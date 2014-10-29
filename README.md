@@ -7,6 +7,7 @@ Feel free to use or copy them.
 1. Servlets, JSP and JSTL
 2. EJB's session beans and MDB
 3. JPA
+4. Spring
 
 WebSample Project:
 
@@ -34,3 +35,12 @@ Note: Using Glassfish server admin add the following for Queue connection factor
 	b. jms/GreetingQueue
 	c. Web service sample url: http://localhost:8080/SampleService/HelloService?Tester
 
+Spring Sample Project:
+
+Sample codes using Spring Framework.
+
+1. spring-property-file-sample - A demonstration on how to configure and use multiple property files in Spring and display the values in JSP using Spring Tag or JSTL.
+	
+	a. Look at root-context.xml for property file configuration.
+	b. To display the values in JSP using JSTL via EL, set 'exposeContextBeansAsAttributes' of InternalResourceViewResolver.
+	c. See servlet-context.xml for InternalResourceViewResolver configuration.
