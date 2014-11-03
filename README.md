@@ -22,7 +22,7 @@ How to run:
 
 EJB Sample Project:
 
-Sample EJB projec using Eclipse and Glassfish 4.
+Sample EJB project using Eclipse and Glassfish 4. It contains web service, servlet, and REST service that utilises Session Beans.
 
 1. Download JavaEE Kit from Oracle site. http://www.oracle.com/technetwork/java/javaee/downloads/index.html
 2. Have a copy of Eclipse, here I've used Kepler.
